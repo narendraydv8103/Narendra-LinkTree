@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Narendra Singh Yadav</title>
+<meta name="description" content="Projects, code and certifications of Narendra Singh Yadav.">
+<meta name="theme-color" content="#12355B">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Narendra Singh Yadav">
+<meta property="og:description" content="My projects, code and certifications.">
+<meta property="og:image" content="photo.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="1600">
+<meta property="og:image:alt" content="Portrait of Narendra Singh Yadav">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Narendra Singh Yadav">
+<meta name="twitter:description" content="My projects, code and certifications.">
+<meta name="twitter:image" content="photo.webp">
+<meta name="twitter:image:alt" content="Portrait of Narendra Singh Yadav">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<!-- Typography -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --navy: #12355B;
+  --sheet: #F3F5F8;
+  --card: #FFFFFF;
+  --line: #D9E0E8;
+  --ink: #12355B;
+  --orange: #E8650A;
+  --f: 'Plus Jakarta Sans', 'Segoe UI', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: var(--navy);
+  color-scheme: light;
+}
+
+body {
+  font: 500 16px/1.5 var(--f);
+  color: var(--ink);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: var(--navy);
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  width: 100%;
+  max-width: 460px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background: var(--sheet);
+  position: relative;
+}
+
+/* Hero photo block */
+.hero {
+  width: 100%;
+  height: 70vh;
+  min-height: 420px;
+  max-height: 640px;
+  position: relative;
+  overflow: hidden;
+  background: var(--navy);
+}
+
+.hero picture,
+.hero img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center top;
+  border: 0;
+  outline: none;
+}
+
+/* Content sheet */
+.sheet {
+  flex: 1;
+  background: var(--sheet);
+  border-radius: 28px 28px 0 0;
+  margin-top: -28px;
+  position: relative;
+  z-index: 1;
+  padding: 32px 20px calc(32px + env(safe-area-inset-bottom));
+  display: flex;
+  flex-direction: column;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: var(--navy);
+}
+
+.bio {
+  color: var(--navy);
+  opacity: 0.85;
+  font-size: 15px;
+  line-height: 1.4;
+  margin-top: 6px;
+}
+
+/* Links */
+.links {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+  width: 100%;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 56px;
+  padding: 16px 20px;
+  border-radius: 9999px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  transition: transform 150ms ease, border-color 150ms ease;
+  cursor: pointer;
+}
+
+.btn {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn:active,
+.btn:focus-visible {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: #FFFFFF;
+}
+
+@media (hover: hover) {
+  .btn:hover {
+    transform: translateY(-2px);
+    background: var(--orange);
+    border-color: var(--orange);
+    color: #FFFFFF;
+  }
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--navy);
+  outline-offset: 3px;
+}
+
+footer {
+  text-align: center;
+  font-size: 13px;
+  color: var(--navy);
+  opacity: 0.75;
+  margin-top: 32px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transition: none;
+  }
+  .btn:hover {
+    transform: none;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+  <div class="hero">
+    <img src="photo.webp" alt="Portrait of Narendra Singh Yadav" width="1200" height="1600" fetchpriority="high" decoding="async">
+  </div>
+  <div class="sheet">
+    <header class="intro">
+      <h1>Narendra Singh Yadav</h1>
+      <p class="bio">My projects, code and certifications.</p>
+    </header>
+    <ul class="links">
+      <li><a class="btn primary" href="https://narendrasinghyadavportfolio.vercel.app/" target="_blank" rel="noopener">View my portfolio</a></li>
+      <li><a class="btn" href="https://github.com/narendraydv8103" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a class="btn" href="https://www.linkedin.com/in/narendrayadav07" target="_blank" rel="noopener">LinkedIn</a></li>
+      <!-- Paste your Google Drive folder link in the href below -->
+      <li><a class="btn" href="https://drive.google.com/drive/folders/1TaLopHiW6CqZCyVGSkG8S7hxR9kdpQ1d" target="_blank" rel="noopener">Certifications</a></li>
+      <li><a class="btn" href="mailto:narendraydv8103@gmail.com">Email</a></li>
+    </ul>
+    <footer>&copy; 2026 Narendra Singh Yadav</footer>
+  </div>
+</main>
+</body>
+</html>
